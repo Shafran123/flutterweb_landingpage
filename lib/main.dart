@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Blub Tech',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins'
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Blub Technologies'),
     );
   }
 }
@@ -75,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             // Top Header
             Padding(
-              padding: const EdgeInsets.only(left: 150.0, top: 20, right: 150),
+              padding: const EdgeInsets.only(left: 150.0, top: 0, right: 150),
               child: HeaderWidget(),
             ),
             Padding(
@@ -88,15 +89,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   Center(
                     child: new Container(
-                      width: 300,
-                      height: 504,
-                      child: Image.asset('assets/vrilustration.png'),
+                      height: MediaQuery.of(context).size.height * 0.7,
+                      child: Image.asset('assets/mock.png'),
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(height: 100,),
+            SizedBox(height: 10,),
 
           ],
         ),

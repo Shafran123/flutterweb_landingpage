@@ -9,17 +9,16 @@ class LeftDescription extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        SizedBox(height:150),
+        SizedBox(height:20),
         // title
         FittedBox(
-          child: new Text('''Play the 
-next level 
-of gaming.''',
+          child: new Text('''Vision animates, inspires, 
+transforms purpose into action.''',
                 style: TextStyle(
                 fontFamily: 'Poppins',
                 color: Color(0xff28313b),
-                fontSize: 50,
-                fontWeight: FontWeight.w400,
+                fontSize: 40,
+                fontWeight: FontWeight.w800,
                 fontStyle: FontStyle.normal,
                 //letterSpacing: 1.5,
                 )
@@ -31,7 +30,6 @@ of gaming.''',
             children: [
             
           new TextSpan(
-            text: "VeeExp",
             style: TextStyle(
             fontFamily: 'Poppins',
             color: Color(0xff1a345d),
@@ -43,9 +41,8 @@ of gaming.''',
             )
             ),
           new TextSpan(
-            text: '''is our first all-in-one gaming system 
-built for virtual reality. Now you can play almost 
-anywhere with just a VR headset and controllers''',
+            text: '''Introducing BULB.
+Transforming ideas into innovations filled with creativity for a better tomorrow.''',
               style: TextStyle(
               fontFamily: 'Poppins',
               color: Color(0xff1a345d),
@@ -65,10 +62,10 @@ anywhere with just a VR headset and controllers''',
             InkWell(
               onTap: () {},
               child: new Container(
-                width: 150,
+                width: 400,
                 height: 57,
                 child: Center(
-                  child: new Text("Learn More",
+                  child: new Text("Stay Tuned!",
                       style: TextStyle(
                       fontFamily: 'Poppins',
                       color: Color(0xffffffff),
@@ -80,32 +77,16 @@ anywhere with just a VR headset and controllers''',
                   ),
                 ),
                 decoration: new BoxDecoration(
-                  color: Color(0xff47afc9),
-                  borderRadius: BorderRadius.circular(8)
+                  color: Color(0xffef6c00),
+                  borderRadius: BorderRadius.circular(30)
                 )
               ),
             ),
             // 
-            SizedBox(width: 40),
-            new Container(
-              width: 34,
-              height: 34,
-              child: Image.asset('assets/play.png'),
-            ),
-            SizedBox(width: 10,),
-            new Text("Watch demo",
-                style: TextStyle(
-                fontFamily: 'Poppins',
-                color: Color(0xff47afc9),
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-                fontStyle: FontStyle.normal,
-                letterSpacing: 2,
-                )
-            )
+            SizedBox(width: 10),
           ],
         ),
-        SizedBox(height: 100,)
+        SizedBox(height: 50,)
       ],
     );
   }
